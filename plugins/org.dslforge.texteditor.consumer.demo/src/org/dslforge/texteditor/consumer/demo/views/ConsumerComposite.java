@@ -36,7 +36,7 @@ public class ConsumerComposite extends Composite {
 		File f = new File(ConsumerView.getHiddenOutputPath());
 		sb.append("Timestamp: " + System.currentTimeMillis() + "<br/><br/>");
 		if (f.exists() && f.isDirectory()) {
-			sb.append("Number of files in output folder: " + f.list().length);
+			sb.append("Number of files in output folder: " + f.list().length + "<br/><br/>");
 			for (File generated : f.listFiles()) {
 				sb.append("<b>Generated file: " + generated.getAbsolutePath() + "</b><br/><br/> ");
 				if (generated.isFile()) {

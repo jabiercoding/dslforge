@@ -12,7 +12,6 @@ Require-Bundle: org.eclipse.rap.ui,
  org.dslforge.xtext.common
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: org.dslforge.texteditor.consumer.demo,
- org.dslforge.texteditor.consumer.demo.actions,
  org.dslforge.texteditor.consumer.demo.internal,
  org.dslforge.texteditor.consumer.demo.parts
 Bundle-ActivationPolicy: lazy
