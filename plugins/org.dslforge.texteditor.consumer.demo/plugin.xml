@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+<extension point="org.eclipse.rap.ui.entrypoint">
+	<entrypoint
+       brandingId="org.dslforge.texteditor.consumer.demo.branding"
+       class="org.dslforge.texteditor.consumer.demo.BasicWorkbench"
+       id="org.dslforge.texteditor.consumer.demo.entrypoint"
+       path="/consumer">
+		</entrypoint>
+	</extension>
+	<extension
+		id="org.dslforge.texteditor.consumer.demo.application"
+				point="org.eclipse.core.runtime.applications">
+		<application
+        cardinality="singleton-global"
+        thread="main"
+        visible="true">
+			<run
+				class="org.dslforge.texteditor.consumer.demo.BasicWorkbenchApplication">
+			</run>
+		</application>
+	</extension>
+	<extension
+	      point="org.eclipse.rap.ui.branding">
+	   <branding
+	         favicon="icons/dslforge.png"
+	         id="org.dslforge.texteditor.consumer.demo.branding"
+	         title="Text Editor Consumer Demo">
+	      <presentationFactory
+             id="org.eclipse.ui.presentations.default"
+             name="Text Editor Demo"
+             viewActionsVisible="true">
+	      </presentationFactory>
+	   </branding>
+	</extension>
+	
+	<extension
+		point="org.eclipse.ui.perspectives">
+		<perspective
+        class="org.dslforge.texteditor.consumer.demo.parts.BasicWorkbenchPerspective"
+        icon="icons/dslforge.png"
+        id="org.dslforge.texteditor.consumer.demo.perspective"
+        name="Text Editor Consumer Demo">
+		</perspective>
+	</extension>
+
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="org.dslforge.texteditor.consumer.demo.views.ConsumerView"
+            id="org.dslforge.texteditor.consumer.demo.view"
+            name="Consumer View"
+            restorable="true">
+      </view>
+   </extension>
+</plugin>

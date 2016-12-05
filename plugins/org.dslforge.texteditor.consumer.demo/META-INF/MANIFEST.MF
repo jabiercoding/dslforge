@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Eclipse RAP Text Editor Consumer Demo
+Bundle-Vendor: PlugBee
+Bundle-Version: 0.9.0.qualifier
+Bundle-SymbolicName: org.dslforge.texteditor.consumer.demo;singleton:=true
+Bundle-Activator: org.dslforge.texteditor.consumer.demo.internal.Activator
+Require-Bundle: org.eclipse.rap.ui,
+ org.dslforge.workspace,
+ org.eclipse.emf.rap.edit.ui,
+ org.eclipse.xtext,
+ org.dslforge.xtext.common
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: org.dslforge.texteditor.consumer.demo,
+ org.dslforge.texteditor.consumer.demo.actions,
+ org.dslforge.texteditor.consumer.demo.internal,
+ org.dslforge.texteditor.consumer.demo.parts
+Bundle-ActivationPolicy: lazy
+Import-Package: org.apache.log4j;version="1.2.15"
